@@ -32,3 +32,4 @@ Thumbs.db
 # Environment variable files
 .env
 .env.*
+*.pkl
