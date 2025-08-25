@@ -1,8 +1,14 @@
 import unittest
 from unittest.mock import patch, MagicMock
+import sys, os
+
+# ✅ Make sure Python looks in project root first
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from app import app
 import json
 import numpy as np
+
 
 class FlaskAppTestCase(unittest.TestCase):
     def setUp(self):
